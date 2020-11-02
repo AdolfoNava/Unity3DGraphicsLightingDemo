@@ -47,6 +47,7 @@ Changes:
 - Created an prefab of an sphere object that works with physics
 - made the sphere object incorporate with a individual light source that can create shadows in real time
 - Made the sphere obeject able to be created by hitting the 'E' key
+
 Problems:
 - The location of when the object gets instntatiated flown is off such so that sometimes these created light objects fall through the floor
 - Sometimes the spheres just goes through walls
