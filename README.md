@@ -41,6 +41,7 @@ Problems:
 ## Week 8
 ### Light Projectile Generation
 First Commit of the Week:
+
 Changes:
 - Github file changes that were messing with file upload
 - Utilizing an environment asset Curosity of SpeedTutor
