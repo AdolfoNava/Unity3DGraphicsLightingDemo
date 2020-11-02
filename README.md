@@ -53,3 +53,15 @@ Problems:
 - The location of when the object gets instntatiated flown is off such so that sometimes these created light objects fall through the floor
 - Sometimes the spheres just goes through walls
 - Did not put an option to delete the light generated objects
+
+### Direct Lighting Chnages
+Second Big Commit of the week
+
+Changes:
+- Created a new script intended for directional lighting
+- The script can rotate the angle of the light source by its y-axis
+- I attempted to make the color of the light change based on the rotation of the directional light
+
+Problems:
+- The Light color does not change as the color rotates as intended
+- The object doesn't delete as sooner as I would want to it deletes after one full rotation
