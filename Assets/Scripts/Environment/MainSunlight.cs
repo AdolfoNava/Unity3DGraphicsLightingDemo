@@ -5,8 +5,10 @@ using UnityEngine;
 public class MainSunlight : MonoBehaviour
 {   public bool changeColors = false;
     public float colorSpeed = 1.0f;
+    public float turnSpeed = 2f;
     public Color startColor;
     public Color endColor;
+    public float sunTime = 18;
 
     public Light mainLight;
     // Start is called before the first frame update
@@ -22,7 +24,7 @@ public class MainSunlight : MonoBehaviour
     {
         float time = Time.deltaTime;
         //Change this line below
-        transform.Rotate(new Vector3 (time, 0, 0));
+        transform.Rotate(Vector3.right, turnSpeed*time);
         //Incorporate interpolation later
         if (changeColors)
         {
@@ -31,7 +33,7 @@ public class MainSunlight : MonoBehaviour
         }
 
         //Ends the light source permamently 
-        if (transform.rotation.x <0)
+        if (Time.time >sunTime)
         {
             Destroy(mainLight);
         }
