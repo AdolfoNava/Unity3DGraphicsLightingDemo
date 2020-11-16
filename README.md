@@ -65,3 +65,41 @@ Changes:
 Problems:
 - The Light color does not change as the color rotates as intended
 - The object doesn't delete as sooner as I would want to it deletes after one full rotation
+## Week 9
+### Water Creation (failed)
+
+Only commit of the week
+
+Changes:
+- Pulled a new unity asset for water surface texture
+- Attempted to make water using shaders for the first time and it did not work whatsoever
+- Added the Universal Rendering Pipeline to the Project settings
+- Fixed the textures of the assets in the scene and model that I had pulled earlier
+
+Problems:
+- The Water Shader failes to function as intended
+- Ball thrown collision appears to be even less consistent
+- Lights generated appear to be less dynamic compared to prior update
+## Week 10
+### Sunlight Transition Adjustment
+
+First commit of the week
+
+Chages:
+- Fixed the problem of the light object not deleting itself past a certain point consistently
+- Fixed the rotation of the object to make it more workable and more clear as to what is being adjusted
+Problem:
+- The sunlight still does not changes the light accordingly
+
+### Proximity Detector (failed)
+
+Second Commit of the week
+
+Changes:
+- attempted to make a proximity script that would work with the player as the user moved closer to the target location
+- made another script to be used in tagent to the proximity detector script but that didn't work either
+- fixed the projectile material to not have it show the pink error
+
+Problems:
+- Can not get the gameobject to disable itself when collider of the player and the "torch" collide
+- Shaders are still a mess to work with
