@@ -21,9 +21,9 @@ public class MainSunlight : MonoBehaviour
     void Update()
     {
         float time = Time.deltaTime;
-
+        //Change this line below
         transform.Rotate(new Vector3 (time, 0, 0));
-
+        //Incorporate interpolation later
         if (changeColors)
         {
         float colorTime = (Mathf.Sin(Time.time - Time.time * colorSpeed));
