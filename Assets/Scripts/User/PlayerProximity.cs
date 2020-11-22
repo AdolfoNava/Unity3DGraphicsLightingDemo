@@ -17,7 +17,7 @@ public class PlayerProximity : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        switch (other.gameObject.name)
+        /*switch (other.gameObject.name)
         {
             case "enable":
                    ProximityDetector.disabled =false;
@@ -26,5 +26,6 @@ public class PlayerProximity : MonoBehaviour
                 ProximityDetector.disabled = true;
                 break;
         }
-    }
+    */
+        }
 }

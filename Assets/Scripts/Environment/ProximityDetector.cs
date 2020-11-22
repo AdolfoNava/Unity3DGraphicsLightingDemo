@@ -6,22 +6,26 @@ using UnityEngine;
 public class ProximityDetector : MonoBehaviour
 {
     public GameObject torch;
-    public static bool disabled = false;
     
     // Start is called before the first frame update
     void Start()
     {
-
+        torch.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (disabled)
-            torch.SetActive(false);
-        else
-            torch.SetActive(true);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        other.gameObject.SetActive(true);
+        torch.SetActive(true);
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        torch.SetActive(false);
+    }
 }
